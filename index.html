@@ -5,116 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Кроссы — и точка.</title>
 
-    <link rel="icon" href="./favicon.png">
+    <link rel="icon" href="./favicon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=IBM+Plex+Mono:wght@500;700&family=Inter&family=Roboto&family=Russo+One&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=IBM+Plex+Mono:wght@500;700&family=Inter&family=Roboto&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/reset.css" />
 
-    <link rel="stylesheet" href="./css/libs/aos.css">
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <script defer src="./js/libs/aos.js"></script>
+    <script defer src="./js/libs/minimasonry.min.js"></script>
+
     <script defer src="./js/main.js"></script>
   </head>
   <body>
     <header id="header" class="header">
       <div class="container">
         <div class="header__row">
-          <a class="logo header__logo" href="./index.html" data-aos="fade-right">
-            <img src="./images/logo.svg" alt="Логотип">
+          <a
+            class="logo header__logo"
+            href="./index.html"
+          >
+            <img src="./images/logo.svg" alt="Логотип" />
           </a>
 
-          <nav class="nav nav--dark" data-aos="fade-left" data-aos-delay="150">
+          <nav class="nav nav--dark header__nav">
             <ul class="nav__list">
               <li class="nav__list-item">
-                <a class="nav__list-item-link" href="#" target="_blank">💬 TG</a>
+                <a class="nav__list-item-link" href="#" target="_blank"
+                  >💬 TG</a
+                >
               </li>
               <li class="nav__list-item">
-                <a class="nav__list-item-link" href="#" target="_blank">😊 VK</a>
+                <a class="nav__list-item-link" href="#" target="_blank"
+                  >😊 VK</a
+                >
               </li>
               <li class="nav__list-item">
-                <a class="nav__list-item-link" href="#" target="_blank">📺 YouTube</a>
+                <a class="nav__list-item-link" href="#" target="_blank"
+                  >📺 YouTube</a
+                >
               </li>
             </ul>
           </nav>
+
+          <button class="burger" type="button" aria-label="Открыть меню">
+            <div class="burger__row">
+              <span class="burger__line burger__line--1"></span>
+              <span class="burger__line burger__line--2"></span>
+              <span class="burger__line burger__line--3"></span>
+            </div>
+          </button>
         </div>
       </div>
     </header>
 
     <main class="main">
-      <!-- Hero -->
-      <section id="hero" class="hero">
-        <picture>
-          <source srcset="./images/hero.avif" type="image/avif">
-          <source srcset="./images/hero.webp" type="image/webp">
-          <img class="hero__bg-image" src="./images/hero.jpg" alt="" aria-hidden="true">
-        </picture>
-
-        <div class="container">
-          <div class="hero__row">
-            <div class="slogan">
-              <h1 class="slogan__title" data-aos="fade-down" data-aos-delay="200">Суперфестиваль кроссов</h1>
-              <p class="slogan__desc" data-aos="fade-up" data-aos-delay="300">
-                В этом ноябре он пройдет в 112-й раз в Парке Горького в Москве. Не пропусти все самое интересное!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Popular -->
-      <section id="popular" class="catalog">
-        <div class="container">
+      <section id="popular" class="catalog popular">
+        <div class="container popular__container">
           <div class="catalog__row">
-            <h2 class="catalog__title catalog__title--mono" data-aos="fade-right" data-aos-delay="500">
-              🔥  Популярные модели
+            <h2
+              class="catalog__title catalog__title--mono"
+            >
+              <span class="catalog__title-default">
+                Коллекция. {октябрь:2023}
+              </span>
+              
+              <span class="catalog__title-mobile">
+                🔥 Популярные модели
+              </span>
             </h2>
 
             <ul class="catalog__list">
-              <li class="catalog__list-item" data-aos="zoom-in-up">
+              <li class="catalog__list-item">
                 <article class="product">
                   <div class="product__row">
                     <div class="product__preview">
-                      <a class="product__link" href="#" title="Nike Air Max Plus">
-                        <img class="product__image" src="./images/product-01.jpg" alt="Nike Air Max Plus">
+                      <a
+                        class="product__link"
+                        href="#"
+                        title="Nike Air Max Plus"
+                      >
+                        <img
+                          class="product__image"
+                          src="./images/product-01.jpg"
+                          alt="Nike Air Max Plus"
+                        />
                       </a>
                     </div>
 
                     <div class="product__info">
                       <h3 class="product__title">Nike Air Max Plus</h3>
-                      <p class="product__desc">Patta FC Barcelona Culers del Món</p>
+                      <p class="product__desc">
+                        Patta FC Barcelona Culers del Món
+                      </p>
                     </div>
                   </div>
                 </article>
               </li>
 
-              <li class="catalog__list-item" data-aos="zoom-in-up">
+              <li class="catalog__list-item">
                 <article class="product">
                   <div class="product__row">
                     <div class="product__preview">
-                      <a class="product__link" href="#" title="Jordan 1 Retro High OG SP">
-                        <img class="product__image" src="./images/product-02.jpg" alt="Jordan 1 Retro High OG SP">
+                      <a
+                        class="product__link"
+                        href="#"
+                        title="Jordan 1 Retro High OG SP"
+                      >
+                        <img
+                          class="product__image"
+                          src="./images/product-02.jpg"
+                          alt="Jordan 1 Retro High OG SP"
+                        />
                       </a>
                     </div>
 
                     <div class="product__info">
                       <h3 class="product__title">Jordan 1 Retro High OG SP</h3>
-                      <p class="product__desc">Union LA Bephies Beauty Supply Summer of ‘96</p>
+                      <p class="product__desc">
+                        Union LA Bephies Beauty Supply Summer of ‘96
+                      </p>
                     </div>
                   </div>
                 </article>
               </li>
 
-              <li class="catalog__list-item" data-aos="zoom-in-up">
+              <li class="catalog__list-item">
                 <article class="product">
                   <div class="product__row">
                     <div class="product__preview">
-                      <a class="product__link" href="#" title="adidas Campus 00s">
-                        <img class="product__image" src="./images/product-03.jpg" alt="adidas Campus 00s">
+                      <a
+                        class="product__link"
+                        href="#"
+                        title="adidas Campus 00s"
+                      >
+                        <img
+                          class="product__image"
+                          src="./images/product-03.jpg"
+                          alt="adidas Campus 00s"
+                        />
                       </a>
                     </div>
 
@@ -126,46 +162,74 @@
                 </article>
               </li>
 
-              <li class="catalog__list-item" data-aos="fade-right">
+              <li class="catalog__list-item">
                 <article class="product">
                   <div class="product__row">
                     <div class="product__preview">
-                      <a class="product__link" href="#" title="Converse Chuck Taylor All Star 70 Hi">
-                        <img class="product__image" src="./images/product-04.jpg" alt="Converse Chuck Taylor All Star 70 Hi">
+                      <a
+                        class="product__link"
+                        href="#"
+                        title="Converse Chuck Taylor All Star 70 Hi"
+                      >
+                        <img
+                          class="product__image"
+                          src="./images/product-04.jpg"
+                          alt="Converse Chuck Taylor All Star 70 Hi"
+                        />
                       </a>
                     </div>
 
                     <div class="product__info">
-                      <h3 class="product__title">Converse Chuck Taylor All Star 70 Hi</h3>
+                      <h3 class="product__title">
+                        Converse Chuck Taylor All Star 70 Hi
+                      </h3>
                       <p class="product__desc">Comme des Garcons PLAY White</p>
                     </div>
                   </div>
                 </article>
               </li>
 
-              <li class="catalog__list-item" data-aos="zoom-in">
+              <li class="catalog__list-item">
                 <article class="product">
                   <div class="product__row">
                     <div class="product__preview">
-                      <a class="product__link" href="#" title="UGG Classic Ultra Mini Boot">
-                        <img class="product__image" src="./images/product-05.jpg" alt="UGG Classic Ultra Mini Boot">
+                      <a
+                        class="product__link"
+                        href="#"
+                        title="UGG Classic Ultra Mini Boot"
+                      >
+                        <img
+                          class="product__image"
+                          src="./images/product-05.jpg"
+                          alt="UGG Classic Ultra Mini Boot"
+                        />
                       </a>
                     </div>
 
                     <div class="product__info">
-                      <h3 class="product__title">UGG Classic Ultra Mini Boot</h3>
+                      <h3 class="product__title">
+                        UGG Classic Ultra Mini Boot
+                      </h3>
                       <p class="product__desc">Chestnut (Women's)</p>
                     </div>
                   </div>
                 </article>
               </li>
 
-              <li class="catalog__list-item" data-aos="fade-left">
+              <li class="catalog__list-item">
                 <article class="product">
                   <div class="product__row">
                     <div class="product__preview">
-                      <a class="product__link" href="#" title="New Balance 574 YURT">
-                        <img class="product__image" src="./images/product-06.jpg" alt="New Balance 574 YURT">
+                      <a
+                        class="product__link"
+                        href="#"
+                        title="New Balance 574 YURT"
+                      >
+                        <img
+                          class="product__image"
+                          src="./images/product-06.jpg"
+                          alt="New Balance 574 YURT"
+                        />
                       </a>
                     </div>
 
@@ -177,12 +241,20 @@
                 </article>
               </li>
 
-              <li class="catalog__list-item" data-aos="fade-up-right">
+              <li class="catalog__list-item">
                 <article class="product">
                   <div class="product__row">
                     <div class="product__preview">
-                      <a class="product__link" href="#" title="Nike Dunk Low SP">
-                        <img class="product__image" src="./images/product-07.jpg" alt="Nike Dunk Low SP">
+                      <a
+                        class="product__link"
+                        href="#"
+                        title="Nike Dunk Low SP"
+                      >
+                        <img
+                          class="product__image"
+                          src="./images/product-07.jpg"
+                          alt="Nike Dunk Low SP"
+                        />
                       </a>
                     </div>
 
@@ -194,12 +266,20 @@
                 </article>
               </li>
 
-              <li class="catalog__list-item" data-aos="fade-up">
+              <li class="catalog__list-item">
                 <article class="product">
                   <div class="product__row">
                     <div class="product__preview">
-                      <a class="product__link" href="#" title="Jordan 1 Retro Low Golf">
-                        <img class="product__image" src="./images/product-08.jpg" alt="Jordan 1 Retro Low Golf">
+                      <a
+                        class="product__link"
+                        href="#"
+                        title="Jordan 1 Retro Low Golf"
+                      >
+                        <img
+                          class="product__image"
+                          src="./images/product-08.jpg"
+                          alt="Jordan 1 Retro Low Golf"
+                        />
                       </a>
                     </div>
 
@@ -211,12 +291,20 @@
                 </article>
               </li>
 
-              <li class="catalog__list-item" data-aos="fade-up-left">
+              <li class="catalog__list-item">
                 <article class="product">
                   <div class="product__row">
                     <div class="product__preview">
-                      <a class="product__link" href="#" title="adidas Yeezy Foam RNNR">
-                        <img class="product__image" src="./images/product-09.jpg" alt="adidas Yeezy Foam RNNR">
+                      <a
+                        class="product__link"
+                        href="#"
+                        title="adidas Yeezy Foam RNNR"
+                      >
+                        <img
+                          class="product__image"
+                          src="./images/product-09.jpg"
+                          alt="adidas Yeezy Foam RNNR"
+                        />
                       </a>
                     </div>
 
@@ -231,109 +319,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Default -->
-      <section id="default" class="catalog">
-        <div class="container">
-          <div class="catalog__row">
-            <h2 class="catalog__title" data-aos="fade-right">
-              Каталог
-            </h2>
-
-            <ul class="catalog__list">
-              <li class="catalog__list-item" data-aos="flip-right" data-aos-delay="150">
-                <article class="product">
-                  <div class="product__row">
-                    <div class="product__preview">
-                      <a class="product__link" href="#" title="Nike SB Dunk Low">
-                        <img class="product__image" src="./images/product-10.jpg" alt="Nike SB Dunk Low">
-                      </a>
-                    </div>
-
-                    <div class="product__info">
-                      <h3 class="product__title">Nike SB Dunk Low</h3>
-                      <p class="product__desc">Born X Raised One Block At A Time</p>
-                    </div>
-                  </div>
-                </article>
-              </li>
-
-              <li class="catalog__list-item" data-aos="flip-up" data-aos-delay="150">
-                <article class="product">
-                  <div class="product__row">
-                    <div class="product__preview">
-                      <a class="product__link" href="#" title="Jordan 1 Retro Low Golf">
-                        <img class="product__image" src="./images/product-08.jpg" alt="Jordan 1 Retro Low Golf">
-                      </a>
-                    </div>
-
-                    <div class="product__info">
-                      <h3 class="product__title">Jordan 1 Retro Low Golf</h3>
-                      <p class="product__desc">Travis Scott Neutral Olive</p>
-                    </div>
-                  </div>
-                </article>
-              </li>
-
-              <li class="catalog__list-item" data-aos="flip-left" data-aos-delay="150">
-                <article class="product">
-                  <div class="product__row">
-                    <div class="product__preview">
-                      <a class="product__link" href="#" title="Crocs Classic Clog">
-                        <img class="product__image" src="./images/product-12.jpg" alt="Crocs Classic Clog">
-                      </a>
-                    </div>
-
-                    <div class="product__info">
-                      <h3 class="product__title">Crocs Classic Clog</h3>
-                      <p class="product__desc">DreamWorks Shrek</p>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Stories -->
-      <section id="stories" class="catalog stories">
-        <div class="container">
-          <div class="stories__row">
-            <h2 class="catalog__title" data-aos="fade-right">
-              Истории
-            </h2>
-          </div>
-        </div>
-      </section>
-
-      <!-- Promo -->
-      <section id="promo" class="promo">  
-        <div class="container promo__container">
-          <picture>
-            <source srcset="./images/knight.avif" type="image/avif">
-            <source srcset="./images/knight.webp" type="image/webp">
-            <img class="decor-image promo__decor-image" src="./images/knight.png" alt="" aria-hidden="true" data-aos="fade-left" data-aos-delay="400">
-          </picture>
-
-          <div class="promo__row">
-            <div class="promo-info">
-              <h2 class="promo-info__title" data-aos="zoom-in-down">
-                Скидка до 40% на химчистку
-              </h2>
-              <p class="promo-info__desc" data-aos="zoom-in-down" data-aos-delay="150">
-                Промокод на скидку в химчистку  CLEAN-CR при покупке от двух пар обуви
-              </p>
-
-              <a class="promo-action" href="#" data-aos="zoom-in-down" data-aos-delay="200">
-                <div class="promo-action__inner">
-                  Открыть промокод
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer id="footer" class="footer">
@@ -341,19 +326,28 @@
         <div class="footer__row">
           <div class="footer__top">
             <a class="logo footer__logo" href="./index.html">
-              <img src="./images/logo-light.svg" alt="Логотип">
+              <picture>
+                <source srcset="./images/logo-light-small.svg" media="(max-width: 550px)" />
+                <img src="./images/logo-light.svg" alt="Логотип" />
+              </picture>
             </a>
 
             <nav class="nav nav--light">
               <ul class="nav__list">
                 <li class="nav__list-item">
-                  <a class="nav__list-item-link" href="#" target="_blank">💬 TG</a>
+                  <a class="nav__list-item-link" href="#" target="_blank"
+                    >💬 TG</a
+                  >
                 </li>
                 <li class="nav__list-item">
-                  <a class="nav__list-item-link" href="#" target="_blank">😊 VK</a>
+                  <a class="nav__list-item-link" href="#" target="_blank"
+                    >😊 VK</a
+                  >
                 </li>
                 <li class="nav__list-item">
-                  <a class="nav__list-item-link" href="#" target="_blank">📺 YouTube</a>
+                  <a class="nav__list-item-link" href="#" target="_blank"
+                    >📺 YouTube</a
+                  >
                 </li>
               </ul>
             </nav>
