@@ -38,6 +38,12 @@ main {
   flex-direction: column;
 }
 
+#global-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
 /*
   font-family: 'Anonymous Pro', monospace;
   font-family: 'IBM Plex Mono', monospace;
@@ -229,6 +235,7 @@ main {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 25px;
+  word-break: break-word;
 }
 
 @media (max-width: 610px) {
@@ -325,7 +332,20 @@ main {
 
   .product__desc {
     font-size: 18px;
-    font-weight: 400;
+  }
+}
+
+@media (max-width: 440px) {
+  .product {
+    max-width: 275px;
+  }
+
+  .product__title {
+    font-size: 16px;
+  }
+
+  .product__desc {
+    font-size: 14px;
   }
 }
 
@@ -430,6 +450,7 @@ main {
 @media (max-width: 610px) {
   .promo-action__inner {
     font-size: 22px;
+    text-align: center;
   }
 }
 
