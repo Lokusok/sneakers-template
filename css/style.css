@@ -64,11 +64,11 @@ main {
 }
 
 .logo:hover {
-  opacity: .7;
+  opacity: .5 !important;
 }
 
 .logo:active {
-  opacity: .3;
+  opacity: .1 !important;
 }
 
 /* Header */
@@ -280,6 +280,11 @@ main {
 .product {
   overflow: hidden;
   max-width: 375px;
+  transition: filter ease .3s;
+}
+
+.product:hover {
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
 }
 
 .product__preview {
